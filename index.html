@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh"><head>
+<meta charset="utf-8">
+<title>川剧文化首页</title>
+	<script src="https://use.fontawesome.com/395db1194a.js"></script>
+	<!--图标链接地址-->
+	<link rel="stylesheet" href="css/shouye.css">
+</head>
+
+<body>
+	<input type="checkbox" id="check"><!--导航栏按键-->
+	<label for="check">
+	    <i class="fa fa-bars" id="btn"></i>
+		<i class="fa fa-times" id="cancel"></i>
+	</label>
+	<div class="sidebar"><!--导航栏-->
+		<header>川剧文化</header><!--网页主题-->
+		<!--各网页导航-->
+		<ul>
+			<li>
+				<a href="login/login.html"><i class="fa fa-user-circle"></i>用户登录</a>
+			</li>
+			<li>
+				<a href="SichuanOpera-History/SichuanOpera-history.html"><i class="fa fa-history"></i>历史沿革</a>
+			</li>
+			<li>
+				<a href="SichuanOpera/SichuanOpera.html"><i class="fa fa-book"></i>川剧剧目</a>
+			</li>
+			<li>
+				<a href="SichuanOpera-School/SichuanOpera-School.html"><i class="fa fa-graduation-cap"></i>川剧流派</a>
+			</li>
+			<li>
+				<a href="SichuanOpera-Face/SichuanOpera-Face.html"><i class="fa fa-bolt"></i>川剧变脸</a>
+			</li>
+			<li>
+				<a href="SichuanOpera-Singing/SichuanOpera-Singing.html"><i class="fa fa-music"></i>川剧唱腔</a>
+			</li>
+			<li>
+				<a href="SichuanOpera-Status/SichuanOpera-Status.html"><i class="fa fa-comment"></i>川剧现状</a>
+			</li>
+		</ul>
+	</div>
+	<div class="slider"><!--轮播图-->
+		<div class="slide current"><!--图片与之相配的文字-->
+			<div class="content"><!--文字（首行空两格）-->
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;川剧（川戏），中国西南地区戏曲曲艺之一。</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="content">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;川剧是融汇高腔、昆曲、胡琴(即皮黄)、弹戏(即梆子)和四川民间灯戏五种声腔艺术而成的传统剧种，是国家第一批非物质文化遗产。</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="content">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;川剧形成于清朝乾隆年间，主要流行于川、渝、云、贵四省市的汉族地区。</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="content">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;川剧特色鲜明，有着与其他剧种不同的地方高腔和令人惊艳的变脸技巧，并以此为人们所熟知。</p>
+			</div>
+		</div>
+	</div>
+	<div class="buttons"><!--按键-->
+		<button id="prev"><!--上一页-->
+			<i class="fa fa-arrow-left"></i>
+		</button>
+		<button id="next"><!--下一页-->
+			<i class="fa fa-arrow-right"></i>
+		</button>
+	</div>
+	<div class="search-box">
+		<!--搜索框-->
+		<input class="search-text" type="search" placeholder="Type to search">
+	    <a class="search-btn" href="#">
+			<i class="fa fa-search"></i>
+			<!--搜索图标-->
+		</a>
+	</div>
+	<script src="js/main.js"></script><!--让图片轮播的公式JS-->
+</body>
+</html>

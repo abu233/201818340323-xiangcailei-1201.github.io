@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+	 background-repeat: no-repeat;
+	 height: 520px}/*背景颜色及大小*/
+
+#login_box {width: 20%;
+			height: 320px;
+			background: #00000060;
+			margin: auto;
+			margin-top: 8%;
+			text-align: center;
+			border-radius: 10px;
+			padding: 50px 50px}/*登录区块设置*/
+
+a{text-decoration: none;color: #FFFFFF90;}/*取消超链接下划线*/
+
+#login_box h1 {margin-top: 1px;font-family: "迷你简小隶书"}/*标题上间距*/
+
+ .logo img{display: block;
+		   margin: 12px auto 0;
+		   width: 50px;
+		   height: 50px}/*logo图片设置*/
+
+#Login_box #form #input_box{margin-top: 3%}
+#Login_box #form #input_box i{color: #FFFFFF}
+#login_box #form #input_box input{border: 0;
+								  width: 60%;
+								  font-size: 14px;			   
+								  color: #FFFFFF;
+								  background: #FFFFFF90;
+								  border-bottom: 1px solid #FFFFFF;
+								  padding: 5px 10px;
+								  margin-top: 20px}/*用户名表单设置*/
+
+#Login_box #form #input_box1 i{color: #FFFFFF}
+#login_box #form #input_box1 input{border: 0;
+								   width: 60%;
+								   font-size: 14px;
+								   color: #FFFFFF;
+								   background: #FFFFFF90;
+								   border-bottom: 1px solid #FFFFFF;
+								   padding: 5px 10px;
+								   margin-top: 20px}/*密码表单设置*/
+/*之前两个表单用的一个ID，验证后改正。但如果把两个表单一起设置ID，就会不对，不知道为什么，所以分开写*/
+
+#login_box button {margin-top: 35px;
+				   width: 50%;
+				   height: 38px;
+				   border-radius: 30px;
+				   border: 0;
+				   color: #FFFFFF;
+				   font-size: 18px;
+				   background: linear-gradient(45deg,lightgreen,lightblue,lightgoldenrodyellow)}/*登录按钮设置*/
+
+#login_box #sign-in{margin: 20% auto}
+#login_box #sign-in .forget{color: #Db1010;float: left}
+#login_box #sign-in .newuser{float: right}/*其他功能需求设置*/

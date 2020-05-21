@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0;
+  padding: 0;			  
+  list-style: none;
+  text-decoration: none;
+  font-family: "迷你简小隶书"}/*全局设置*/
+
+.body{margin: 0;
+	  padding: 0}/*全局设置*/
+
+.sidebar{position: fixed;
+		 left: -250px;
+		 height: 100%;
+		 width: 250px;
+		 background: #042331;
+		 transition: all .5s ease}/*导航栏整个大小，转换位置，时间*/
+
+.sidebar header{font-size: 30px;
+				color: #FFFFFF;
+				text-align: center;
+				line-height: 70px;
+				background: #063146;
+				user-select: none}/*导航栏表头*/
+
+.sidebar ul a{display: block;
+			  height: 100%;
+			  width: 100%;
+			  line-height: 65px;
+			  font-size: 20px;
+			  color: #FFFFFF;
+			  padding-left: 40px;
+			  box-sizing: border-box;
+			  border-top: 1px solid rgba(255,255,255,.1);
+			  border-bottom:1px solid black;
+			  transition: .4s}/*各导航网页设置*/
+
+ul li:hover a{padding-left: 50px}/*各导航网页图标*/
+
+.sidebar ul a i{margin-right: 16px}/*文字与图标间距*/
+
+label #btn,label #cancel{position: absolute;
+						 cursor: pointer;
+						 background: #042331;
+						 border-radius: 3px}/*两个按钮共同设置*/
+
+label #btn{position: absolute;
+		   cursor:pointer;
+		   background: #042331;
+		   border-radius: 3px;		   
+		   left: 23px;
+		   top: 10px;
+		   font-size: 25px;
+		   color: white;
+		   padding: 6px 9px;
+		   transition: all .5s}/*菜单按钮*/
+
+label #cancel{z-index: 100;
+			  left: -195px;
+			  top: 17px;
+			  font-size: 25px;
+			  color: #0a5275;
+			  padding: 4px 9px;
+			  transition: all .5s ease}/*小叉按钮*/
+
+#check{display: none}/*隐藏元素*/
+
+#check:checked ~ .sidebar{left: 0}/*点击按钮时导航栏位置*/
+
+#check:checked ~ label #btn{left: 200px;
+							opacity: 0;
+							pointer-events: none}/*点击菜单按钮时导航栏位置*/
+
+#check:checked ~ label #cancel{left: 195px}/*点击小叉按钮时导航栏位置*/
+
+h1{font-family: "方正粗黑宋简体";
+   font-size: 32px;
+   color: #698084;
+   letter-spacing: normal;
+   margin-bottom: 9px}/*定义h1*/
+
+ .container{width: 98%;
+		    height: 580px;
+		    margin:0 auto;
+		    text-align: center;
+			background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+			padding: 20px;}/*定义区块*/
+
+.articleText{font-size: 22px;
+			 letter-spacing: 4px;
+			 line-height: 1.2;
+			 text-align:left;
+			 text-indent: 2em;
+			 margin: 20px}/*正文设置*/
+
+.footer{font-size: 12px;
+		font-family: "方正粗黑宋简体";
+		line-height: 1.5;
+		text-align:center}/*页脚设置*/
+
+.picture{width: 260px;
+		 width: 37%;
+		 float: right;
+		 margin-top: 20px;
+		 margin-right: 20px}/*图片位置*/
+
+.picture img{display: block;
+			 width: 100%}/*图片大小*/
+
+.footer{font-size: 12px;
+		font-family: "方正粗黑宋简体";
+		line-height: 1.5;
+		text-align:center}/*页脚设置*/
+
+.top{font-family: "方正粗黑宋简体";
+	 font-size: 12px;
+	 color: #B0B0B0;
+	 letter-spacing: normal;
+	 margin-top: 520px}/*回到顶部*/

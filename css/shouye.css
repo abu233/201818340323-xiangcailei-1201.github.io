@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+*{	margin: 0;
+  	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "迷你简小隶书"}/*页面字体间距大小*/
+
+body{background-color: #333;
+	 color: #FFFFFF;			
+	 line-height: 1.6;			
+	 font-size: 25px}/*背景色，行间距，字体大小*/
+
+.sidebar{position: fixed;
+		 left: -250px;
+		 height: 100%;
+		 width: 250px;
+		 background: #042331;
+		 transition: all .5s ease}/*导航栏整个大小，转换位置，时间*/
+
+.sidebar header{font-size: 30px;
+				color: #FFFFFF;
+				text-align: center;
+				line-height: 70px;
+				background: #063146;
+				user-select: none}/*导航栏表头*/
+
+.sidebar ul a{display: block;
+			  height: 100%;
+			  width: 100%;
+			  line-height: 65px;
+			  font-size: 20px;
+			  color: #FFFFFF;
+			  padding-left: 40px;
+			  box-sizing: border-box;
+			  border-top: 1px solid rgba(255,255,255,.1);
+			  border-bottom:1px solid black;
+			  transition: .4s}/*各导航网页设置*/
+
+ul li:hover a{padding-left: 50px}/*各导航网页图标*/
+
+.sidebar ul a i{margin-right: 16px}/*文字与图标间距*/
+
+label #btn,label #cancel{position: absolute;
+						 cursor: pointer;
+						 background: #042331;
+						 border-radius: 3px}/*两个按钮共同设置*/
+
+label #btn{position: absolute;
+		   cursor:pointer;
+		   background: #042331;
+		   border-radius: 3px;		   
+		   left: 23px;
+		   top: 10px;
+		   font-size: 25px;
+		   color: white;
+		   padding: 6px 9px;
+		   transition: all .5s}/*菜单按钮*/
+
+label #cancel{z-index: 100;
+			  left: -195px;
+			  top: 17px;
+			  font-size: 25px;
+			  color: #0a5275;
+			  padding: 4px 9px;
+			  transition: all .5s ease}/*小叉按钮*/
+
+#check{display: none}/*隐藏元素*/
+
+#check:checked ~ .sidebar{left: 0}/*点击按钮时导航栏位置*/
+
+#check:checked ~ label #btn{left: 200px;
+							opacity: 0;
+							pointer-events: none}/*点击菜单按钮时导航栏位置*/
+
+#check:checked ~ label #cancel{left: 195px}/*点击小叉按钮时导航栏位置*/
+
+.slider{position: relative;
+		overflow: hidden;
+		height: 100vh;
+		width: 100vw;
+		z-index: -1}/*轮播图*/
+
+.slide{position: absolute;
+	   top: 0;
+	   left: 0;
+	   width: 100%;
+	   height: 100%;
+	   opacity: 0;
+	   transition:opacity 0.4s ease-in-out}/*轮播图大小位置不透明度*/
+
+.slide.current{opacity: 1}/*不透明度*/
+
+.slide:first-child{background: url("../img/rotation1.jpg") no-repeat center center/cover}
+.slide:nth-child(2){background: url("../img/rotation2.jpg") no-repeat center center/cover}
+.slide:nth-child(3){background: url("../img/rotation3.jpg") no-repeat center center/cover}
+.slide:nth-child(4){background: url("../img/rotation4.jpg") no-repeat center center/cover}
+/*四张图片（轮播图）*/
+
+.slide .content{position: absolute;
+				bottom: 60px;
+				right: 0px;
+				width: 400px;
+				background-color: rgba(255,255,255,0.8);
+				color: #000000;
+				padding: 25px}/*每张图上的文字*/
+
+.buttons button#prev{position: absolute;
+					 top: 50%;
+					 left: 15px}/*上一页位置*/
+
+.buttons button#next{position: absolute;
+					 top: 50%;
+					 right: 15px}/*下一页位置*/
+
+.buttons button{border: 2px solid #FFFFFF;
+				background-color: transparent;
+				color: #FFFFFF;
+				cursor: pointer;
+				padding: 13px 15px;
+				border-radius: 50%;
+				outline: none}/*左右转换按钮（未点击）*/
+
+.buttons button:hover{background-color: #FFFFFF;
+					  color: #333333}/*左右转换按钮点击颜色*/
+
+.search-box{position: absolute;
+			top: 2%;
+			right: 2%;
+			transform: translate(-2%,-2%);
+			background: #566283;
+			height: 25px;
+			border-radius: 20px;
+			padding: 10px}/*搜索框设置*/			
+
+.search-box:hover > .search-text{width: 200px;
+								 padding: 0 5px}/*展开时搜索框长度*/
+.search-box:hover > .search-btn{color: #FFFFFF}/*展开时搜索按钮颜色*/
+
+.search-btn{color: #7864AA;
+			float: right;			
+			width: 25px;				
+			height: 25px;			
+			border-radius: 50%;			
+			display: flex;			
+			justify-content: center;			
+			align-items: center;			
+			background: #566283;			
+			transition: 0.4s}/*搜索按钮*/
+
+.search-text{border: none;
+			 background: none;			 
+			 outline: none;
+			 float: left;
+			 padding: 0;
+			 color: #FFFFFF;
+			 font-size: 16px;
+			 transition: 0.4s;
+			 line-height: 30px;
+			 width: 0px}/*搜索框文字*/
